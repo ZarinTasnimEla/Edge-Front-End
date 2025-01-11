@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exploraa - Professional Collaborative Platform</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+     
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #C4A484; 
+            color: #3E2723; 
+        }
+
+      
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #6F4E37;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 3px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: #333;
+                width: 200px;
+                border-radius: 5px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
+
+      
+        .container {
+            margin-top: 60px;
+        }
+
+        .card {
+            background-color: #F7E7CE; 
+            border: 2px solid #D7CCC8;
+            border-radius: 12px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 40px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            background-color: #6F4E37; 
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .card-body {
+            padding: 30px;
+            font-size: 1.2em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            background-color: #6F4E37;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .card-title {
+            font-size: 1.6em;
+            color: #6F4E37; 
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            font-size: 1.1em;
+            color: #3E2723;
+            margin-bottom: 20px;
+        }
+
+        .btn-light {
+            color: #6F4E37;
+            background-color: #F7E7CE;
+            border: 2px solid #6F4E37;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-light:hover {
+            background-color: #6F4E37;
+            color: white;
+            border: 2px solid #6F4E37;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #3E2723;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #F7E7CE;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .card-icon {
+            font-size: 3em;
+            color: #6F4E37;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 767px) {
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <nav class="navbar">
+        <div class="logo">Exploraa</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">&#128221;</span>
+                        <h2>Researcher</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Innovative Research</h5>
+                        <p class="card-text">Join a global network of researchers collaborating to advance knowledge across various fields. Share ideas, access resources, and contribute to groundbreaking projects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">&#128218;</span>
+                        <h2>Thesis Writer</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Academic Excellence</h5>
+                        <p class="card-text">Collaborate with experts to write impactful theses and dissertations that ensure academic success. Get peer feedback, insights, and guidance throughout the process.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">&#x1F91D;</span>
+                        <h2>Peer Reviewer</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Assurance</h5>
+                        <p class="card-text">Help improve academic work by providing constructive feedback as a peer reviewer. Enhance the credibility of research through detailed evaluation and suggestions.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Exploraa - A global collaboration platform for researchers and academics</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

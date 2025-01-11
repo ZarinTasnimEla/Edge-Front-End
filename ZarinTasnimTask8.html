@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Exploraa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #C4A484; 
+            color: #3E2723;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #F7E7CE; 
+            border-radius: 10px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            color: #6F4E37;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #6F4E37;
+        }
+
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #D7CCC8; 
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #F7E7CE; 
+            color: #3E2723;
+            font-family: "Times New Roman", Times, serif;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form input:focus, .form textarea:focus {
+            border-color: #6F4E37; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            background-color: #6F4E37; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form button:hover {
+            background-color: #3E2723; 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .info a {
+            color: #6F4E37;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .info a:hover {
+            color: #3E2723;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Exploraa</h1>
+        </div>
+        <div class="form">
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="info">
+            <p>You can also reach us via:</p>
+            <p>Email: <a href="mailto:support@exploraa.com">support@exploraa.com</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </div>
+</body>
+</html>

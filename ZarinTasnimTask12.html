@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploraa - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #C4A484;
+            color: #3E2723;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #6F4E37;
+        }
+
+        .navbar-brand {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12;
+        }
+
+        .hero-section {
+            position: relative;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(rgba(63, 38, 27, 0.7), rgba(63, 38, 27, 0.7)),
+            url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rHpTvtp7IJFHwTXu2DQDBgdG6zlMW6MAbw&s') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero-section .btn {
+            font-size: 1.2em;
+            background-color: #f39c12;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .hero-section .btn:hover {
+            background-color: #e67e22;
+        }
+
+        .features {
+            padding: 50px 0;
+        }
+
+        .features .feature-card {
+            background-color: #F7E7CE;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .features .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .features .feature-card h4 {
+            margin-top: 15px;
+            color: #6F4E37;
+        }
+
+        .features .feature-card p {
+            color: #3E2723;
+        }
+
+        .features .feature-card i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card .icon-blue {
+            color: #3498db;
+        }
+
+        .feature-card .icon-green {
+            color: #2ecc71;
+        }
+
+        .feature-card .icon-orange {
+            color: #e67e22;
+        }
+
+        .cta-section {
+            background-color: #6F4E37;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .cta-section .btn {
+            font-size: 1.2em;
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: #3E2723;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Exploraa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Join Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Welcome to Exploraa</h1>
+        <p>Discover a collaborative platform designed for researchers and academics to connect, share, and innovate together.</p>
+        <a href="#features" class="btn">Explore Features</a>
+    </div>
+
+    <section class="features container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-users icon-blue"></i>
+                    <h4>Collaborative Research</h4>
+                    <p>Engage with global researchers to tackle complex challenges and advance knowledge.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-pencil-alt icon-green"></i>
+                    <h4>Peer Review</h4>
+                    <p>Provide and receive constructive feedback to ensure quality academic outputs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap icon-orange"></i>
+                    <h4>Thesis Support</h4>
+                    <p>Access resources and expert guidance to excel in your thesis and dissertation writing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Collaborate?</h2>
+        <p>Join Exploraa today and become part of a global academic community.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Exploraa - A platform for academic collaboration</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

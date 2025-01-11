@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Exploraa</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #C4A484; /* Light brown background */
+            color: #3E2723; /* Dark brown text */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #F7E7CE; 
+            border-radius: 10px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            color: #6F4E37; 
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        .content {
+            line-height: 1.8;
+        }
+
+        .content h2 {
+            color: #6F4E37;
+            margin-bottom: 10px;
+            border-left: 4px solid #3E2723;
+            padding-left: 10px;
+            font-size: 1.8em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 200px;
+            background-color: #6F4E37; 
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 5px solid #D7CCC8; /* Light brown border */
+        }
+
+        .team-member h3 {
+            font-size: 1.3em;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .team-member p {
+            font-size: 1em;
+            color: #fff;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #6F4E37;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #3E2723;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Exploraa</h1>
+        </div>
+        <div class="content">
+            <h2>Who We Are</h2>
+            <p>Exploraa is a collaborative platform designed to bring researchers, thesis writers, and academics from across the globe together. Our mission is to foster knowledge-sharing, promote innovation, and create a space where ideas thrive without borders.</p>
+
+            <h2>Our Vision</h2>
+            <p>We envision a world where collaboration in research transcends geographical boundaries, enabling individuals to contribute to global advancements in science, technology, and humanities.</p>
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img src="rian.jpg" alt="Team Member 1">
+                <h3>Rianul Amin</h3>
+                <p>Co-Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="ella.jpg" alt="Team Member 2">
+                <h3>Zarin Tasnim</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="mitti.jpg" alt="Team Member 3">
+                <h3>Wasifa Tasnim</h3>
+                <p>Head of Community</p>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#contact">Join Us</a>
+        </div>
+    </div>
+</body>
+</html>
